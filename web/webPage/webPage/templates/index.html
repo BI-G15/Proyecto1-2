@@ -1,29 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Mental health</title>
+  <title>SAVE lives</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico&effect=neon|outline|emboss|shadow-multiple">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald&effect=neon|outline|emboss|shadow-multiple">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
+    #tittleText{
+      font-family: "Pacifico", sans-serif;
+      font-size: 80px;
+      color: #475c69;
+    }
+
+    #p1{
+      font-family: "Oswald", sans-serif;
+      font-size: 20px;
+      color: #323f47;
+      background-color: #8ac2e7c9;
+      padding-top: 15px;
+      height: 70px;
     }
     
+    #pageTittle{
+      padding-top: 20px;
+      height: 150px;
+      background-color: #2576ac;
+    }
+
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
     .row.content {height: 450px}
     
     /* Set gray background color and 100% height */
     .sidenav {
-      padding-top: 20px;
+      
       background-color: #f1f1f1;
       height: 100%;
     }
     
+
     /* Set black background color, white text and some padding */
     footer {
       background-color: #555;
@@ -42,14 +61,17 @@
   </style>
 </head>
 <body>   
+  <div class="container-fluid text-center" id="pageTittle">
+      <h1 id="tittleText" class="font-effect-shadow-multiple">SAVE Lives</h1>
+  </div>
   <div class="container-fluid text-center">
-      <h1>Bienvenido</h1>
-      <p>En esta pagina encontrarás un detector de comentarios suicidas, por favor en caso de ser clasificado como suicida accede a esta pagina para obtener mas ayuda 
+    <img src="https://thumbs.dreamstime.com/b/happy-people-group-holding-blank-banner-seven-young-long-text-announcement-celebrate-concept-flat-vector-illustration-172081178.jpg" class="img-fluid" style="width: 90%" alt="Responsive image">
+    <p id="p1">En esta pagina encontrarás un detector de comentarios suicidas, por favor en caso de ser clasificado como suicida accede a esta pagina para obtener mas ayuda 
         <a href="https://save.org/">SAVE organization</a>
       </p>
   </div>
   <div class="container-fluid">
-    <h1>Instrucciones</h1>
+    <h1 style="font-family: Oswald, sans-serif;">Instrucciones</h1>
       <ol>
         <li>
             Para agregar una entrada oprime el boton +
@@ -66,7 +88,7 @@
     </ol>
       <p></p>
       <hr>
-      <h1>Test</h1>
+      <h1 style="font-family: Oswald, sans-serif;">Test</h1>
       <main>
         <div class="container" style="min-height: 580px;">
         {% block content %}

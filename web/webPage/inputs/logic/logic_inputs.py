@@ -8,9 +8,7 @@ def get_inputs():
 def create_inputs(form):
     inputs = form.save(commit=False)
     text = inputs.text
-    print(text)
     result = predict(text)
-    print(result)
     input = Input(text=text, result=result)
     input.save()
     return ()
