@@ -1,6 +1,5 @@
 from ..models import Input
 from joblib import load
-import pandas as pd
 
 def get_inputs():
     queryset = Input.objects.all()
