@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+{% block content %}
+<form method="POST">
+    {% csrf_token %}
+    <br>
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-success waves-effect waves-light">Predecir</button>
+    <button type="button" class="btn btn-primary waves-effect waves-light"
+                                onClick=" window.location.href='/inputs' ">Atras
+    </button>
+</form>
+{% endblock %}
