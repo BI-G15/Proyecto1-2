@@ -1,8 +1,7 @@
 from typing import Optional
 
 from fastapi import FastAPI
-from joblib import load, dump
-import pandas as pd
+from joblib import load
 
 from .DataModel import DataModel
 from .DataModel import JsonInput
